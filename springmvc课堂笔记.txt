@@ -20,7 +20,7 @@ SpringMVC就是一个Spring。 Spring是容器，ioc能够管理对象，使用<bean>, @Component,
 
    
 
-  index.jsp-----DispatherServlet(Servlet)----转发，分配给---Controller对象（@Controller注解创建的对象）
+  index.jsp -----DispatherServlet(Servlet)----转发，分配给---Controller对象（@Controller注解创建的对象）
   main.jsp                                                   MainController
   addUser.jsp                                                UserController
 
@@ -32,7 +32,8 @@ springmvc请求的处理流程
 
  1）发起some.do
  2）tomcat(web.xml--url-pattern知道 *.do的请求给DispatcherServlet)
- 3）DispatcherServlet（根据springmvc.xml配置知道 some.do---doSome()）
+ 3）DispatcherServlet（根据springmvc.xml配置知道 some.do---doSome()
+ （根据组件扫描器->利用注解生成对象MyController->通过注解知道MyController对应的some.do---doSome()的映射关系））
  4）DispatcherServlet把some.do转发个MyController.doSome()方法
  5）框架执行doSome（）把得到ModelAndView进行处理， 转发到show.jsp
 
