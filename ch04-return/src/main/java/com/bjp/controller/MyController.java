@@ -36,4 +36,19 @@ public class MyController {
         // 框架对视图执行forward转发操作
         return "show";
     }
+
+    //处理器方法返回String,表示完整视图路径， 此时不能配置视图解析器
+    @RequestMapping(value = "/returnString-view2.do")
+    public String doReturnView2(HttpServletRequest request,String name, Integer age){
+        System.out.println("===doReturnView2====, name="+name+"   age="+age);
+        //可以自己手工添加数据到request作用域
+        request.setAttribute("myname",name);
+        request.setAttribute("myage",age);
+        // 完整视图路径，项目中不能配置视图解析器
+        // 框架对视图执行forward转发操作
+        // /WEB-INF/view//WEB-INF/view/show.jsp.jsp
+        // /WEB-INF/view/WEB-INF/view/show.jsp.jsp
+        return "/WEB-INF/view/show.jsp";
+    }
+
 }
