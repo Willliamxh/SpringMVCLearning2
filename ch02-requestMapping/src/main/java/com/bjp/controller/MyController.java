@@ -33,7 +33,7 @@ public class MyController {
      *  HTTP Status 405 - Request method 'GET' not supported
      */
     //指定some.do使用get请求方式
-    @RequestMapping(value = {"/some.do","/first.do"},method = RequestMethod.GET)
+    @RequestMapping(value = {"/some.do"},method = RequestMethod.GET)
     public ModelAndView doSome(){// doGet()--service请求处理
         //加了注解后表示可以处理some.do请求了。 （service调用等会再讲）现在相当于service调用处理完成了。
         ModelAndView mv = new ModelAndView();
