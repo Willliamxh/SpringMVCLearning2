@@ -4,12 +4,14 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/ch01-helloSpringMVC" />
     <file type="web" url="file://$PROJECT_DIR$/ch02-requestMapping" />
+    <file type="web" url="file://$PROJECT_DIR$/ch03-receiveParam" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/ch02-requestMapping/pom.xml" />
+        <option value="$PROJECT_DIR$/ch03-receiveParam/pom.xml" />
       </list>
     </option>
   </component>
