@@ -3,6 +3,7 @@ package com.bjp.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -45,6 +46,29 @@ public class MyController {
         mv.addObject("myname",name);
         mv.addObject("myage",Integer.valueOf(age));
         // show是视图文件的逻辑名称（文件名称）
+        mv.setViewName("show");
+        return mv;
+    }
+
+
+    /**
+     * 请求中参数名和处理器方法的形参名不一样
+     * @RequestParam: 逐个接收请求参数中， 解决请求中参数名形参名不一样的问题
+     *      属性： 1. value 请求中的参数名称
+     *            2. required 是一个boolean，默认是true
+     *                true：表示请求中必须包含此参数。
+     *      位置： 在处理器方法的形参定义的前面
+     */
+    @RequestMapping(value = "/receiveparam.do")
+    public ModelAndView receiveParam(@RequestParam(value = "rname",required = false) String name,
+                                     @RequestParam(value = "rage",required = false) Integer age){
+        System.out.println("doSome, name="+name+"   age="+age);
+        //可以在方法中直接使用 name ， age
+        //处理some.do请求了。 相当于service调用处理完成了。
+        ModelAndView mv  = new ModelAndView();
+        mv.addObject("myname",name);
+        mv.addObject("myage",age);
+        //show是视图文件的逻辑名称（文件名称）
         mv.setViewName("show");
         return mv;
     }
