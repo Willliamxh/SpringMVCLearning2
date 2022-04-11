@@ -11,7 +11,7 @@
     <input type="submit" value="提交参数">
     </form>
     <br/>
-    <img src="images/p1.jpg" alt="我是一个静态资源，不能显示">
+    <img src="images/p1.jpg" >
 
 </body>
 </html>
