@@ -21,8 +21,16 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <!--没有注解驱动-->
-    <mvc:annotation-driven/>
+    <!-- default-servlet-handler 和 @RequestMapping注解 有冲突， 需要加入annotation-driven 解决问题
+    因为default-servlet-handler吧所有请求都转发给default了-->
+    <!--https://blog.csdn.net/u011066470/article/details/112438252-->
+    <mvc:annotation-driven />
 
+    <!--第一种处理静态资源的方式：
+        需要在springmvc配置文件加入 <mvc:default-servlet-handler>
+        原理是： 加入这个标签后，框架会创健控制器对象DefaultServletHttpRequestHandler（类似我们自己创建的MyController）.
+        DefaultServletHttpRequestHandler这个对象可以把接收的请求转发给 tomcat的default这个servlet。
+    -->
+    <mvc:default-servlet-handler />
 
 </beans>
