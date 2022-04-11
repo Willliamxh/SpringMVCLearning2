@@ -18,7 +18,7 @@ ch04-return: 处理器方法的返回值表示请求的处理结果
        pw.println(json);
 
   springmvc处理器方法返回Object， 可以转为json输出到浏览器，响应ajax的内部原理
-  1. <mvc:annotation-driven> 注解驱动。
+  1. <mvc:annotation-driven> 注解驱动。 负责输入
      注解驱动实现的功能是 完成java对象到json，xml， text，二进制等数据格式的转换。
      <mvc:annotation-driven>在加入到springmvc配置文件后， 会自动创建HttpMessageConverter接口
      的7个实现类对象（ctrl+h 点击HttpMessageConverter）， 包括 MappingJackson2HttpMessageConverter （使用jackson工具库中的ObjectMapper实现java对象转为json字符串）
@@ -49,7 +49,7 @@ ch04-return: 处理器方法的返回值表示请求的处理结果
         json  = om.writeValueAsString(student);
 
 
- 2. @ResponseBody注解
+ 2. @ResponseBody注解 负责输出
    放在处理器方法的上面， 通过HttpServletResponse输出数据，响应ajax请求的。
            PrintWriter pw  = response.getWriter();
            pw.println(json);
