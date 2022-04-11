@@ -16,8 +16,8 @@
                         age:20
                     },
                     type:"post",
-                    // dataType:"text",
-                    dataType:"json",
+                    dataType:"text",
+                    // dataType:"json",
                     success:function(resp){
                         //resp从服务器端返回的是json格式的字符串 {"name":"zhangsan","age":20}
                         //jquery会把字符串转为json对象， 赋值给resp形参。
