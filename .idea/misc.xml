@@ -6,6 +6,7 @@
     <file type="web" url="file://$PROJECT_DIR$/ch02-requestMapping" />
     <file type="web" url="file://$PROJECT_DIR$/ch03-receiveParam" />
     <file type="web" url="file://$PROJECT_DIR$/ch04-return" />
+    <file type="web" url="file://$PROJECT_DIR$/ch05-url-pattern" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -14,10 +15,11 @@
         <option value="$PROJECT_DIR$/ch02-requestMapping/pom.xml" />
         <option value="$PROJECT_DIR$/ch03-receiveParam/pom.xml" />
         <option value="$PROJECT_DIR$/ch04-return/pom.xml" />
+        <option value="$PROJECT_DIR$/ch05-url-pattern/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

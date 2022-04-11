@@ -9,6 +9,7 @@
         <module name="ch03-receiveParam" />
         <module name="ch04-return" />
         <module name="ch02-requestMapping" />
+        <module name="ch05-url-pattern" />
         <module name="ch01-helloSpringMVC" />
       </profile>
     </annotationProcessing>
