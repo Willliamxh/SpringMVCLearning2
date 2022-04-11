@@ -21,7 +21,7 @@ ch04-return: 处理器方法的返回值表示请求的处理结果
   1. <mvc:annotation-driven> 注解驱动。
      注解驱动实现的功能是 完成java对象到json，xml， text，二进制等数据格式的转换。
      <mvc:annotation-driven>在加入到springmvc配置文件后， 会自动创建HttpMessageConverter接口
-     的7个实现类对象， 包括 MappingJackson2HttpMessageConverter （使用jackson工具库中的ObjectMapper实现java对象转为json字符串）
+     的7个实现类对象（ctrl+h 点击HttpMessageConverter）， 包括 MappingJackson2HttpMessageConverter （使用jackson工具库中的ObjectMapper实现java对象转为json字符串）
 
      HttpMessageConverter接口：消息转换器。
      功能：定义了java转为json，xml等数据格式的方法。 这个接口有很多的实现类。
