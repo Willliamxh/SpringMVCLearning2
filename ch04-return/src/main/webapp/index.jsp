@@ -9,8 +9,8 @@
                 //alert("button click");
                 $.ajax({
                     //url:"returnVoid-ajax.do",
-                    url:"returnStudentJsonArray.do",
-                    // url:"returnStringData.do",
+                    // url:"returnStudentJsonArray.do",
+                    url:"returnStringData.do",
                     data:{
                         name:"zhangsan",
                         age:20
@@ -24,10 +24,10 @@
 
                         // [{"name":"李四同学","age":20},{"name":"张三","age":28}]
                         // alert(resp.name + "    "+resp.age);
-                        $.each(resp,function(i,n){
-                            alert(n.name+"   "+n.age)
-                        })
-                        // alert("返回的是文本数据："+resp);
+                        // $.each(resp,function(i,n){
+                        //     alert(n.name+"   "+n.age)
+                        // })
+                        alert("返回的是文本数据："+resp);
 
                     }
                 })
