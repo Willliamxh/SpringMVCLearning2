@@ -16,5 +16,21 @@
         <property name="password" value="${password}" />
     </bean>
 
+    <!--SqlSessionFactoryBean创建SqlSessionFactory-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="configLocation"  value="classpath:conf/mybatis.xml" />
+    </bean>
 
+    <!--声明mybatis的扫描器，创建dao对象-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+        <property name="basePackage" value="com.bjp.dao" />
+    </bean>
+
+    <!--声明service的注解@Service所在的包名位置-->
+    <context:component-scan base-package="com.bjp.service" />
+
+
+    <!--事务配置：注解的配置， aspectj的配置-->
 </beans>
