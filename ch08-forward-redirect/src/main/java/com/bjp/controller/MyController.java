@@ -46,8 +46,9 @@ public class MyController {
      *
      * 2.在目标hello.jsp页面可以使用参数集合对象 ${param}获取请求参数值
      *    ${param.myname}
-     *
      * 3.重定向不能访问/WEB-INF资源
+     *
+     *
      */
     @RequestMapping(value = "/doRedirect.do")
     public ModelAndView doWithRedirect(String name,Integer age){
