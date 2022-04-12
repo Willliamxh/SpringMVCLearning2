@@ -173,7 +173,7 @@ web.xml file).
 
 
 
-   2）在你的页面中的，访问地址加 "/"
+   2）在你的页面中的，访问地址（前端）加 "/"
       访问的是： http://localhost:8080/ch06_path/index.jsp
       路径： http://localhost:8080/ch06_path/
 		资源： index.jsp
@@ -182,7 +182,7 @@ web.xml file).
 		参考地址是 你的服务器地址， 也就是 http://localhost:8080
 
 
-		如果你的资源不能访问： 加入${pageContext.request.contextPath}
+		如果你的资源不能访问： el表达式 加入${pageContext.request.contextPath}
 		<a href="${pageContext.request.contextPath}/user/some.do">发起user/some.do的get请求</a>
 
 

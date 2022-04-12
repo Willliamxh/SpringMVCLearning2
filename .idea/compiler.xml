@@ -11,6 +11,7 @@
         <module name="ch02-requestMapping" />
         <module name="ch05-url-pattern" />
         <module name="ch01-helloSpringMVC" />
+        <module name="ch06-path" />
       </profile>
     </annotationProcessing>
   </component>

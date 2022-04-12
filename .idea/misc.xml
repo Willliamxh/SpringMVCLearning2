@@ -7,6 +7,7 @@
     <file type="web" url="file://$PROJECT_DIR$/ch03-receiveParam" />
     <file type="web" url="file://$PROJECT_DIR$/ch04-return" />
     <file type="web" url="file://$PROJECT_DIR$/ch05-url-pattern" />
+    <file type="web" url="file://$PROJECT_DIR$/ch06-path" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -16,6 +17,7 @@
         <option value="$PROJECT_DIR$/ch03-receiveParam/pom.xml" />
         <option value="$PROJECT_DIR$/ch04-return/pom.xml" />
         <option value="$PROJECT_DIR$/ch05-url-pattern/pom.xml" />
+        <option value="$PROJECT_DIR$/ch06-path/pom.xml" />
       </list>
     </option>
   </component>
