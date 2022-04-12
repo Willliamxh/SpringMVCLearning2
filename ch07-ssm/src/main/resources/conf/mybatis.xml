@@ -13,6 +13,9 @@
     <!--设置别名-->
     <typeAliases>
         <!--name:实体类所在的包名(不是实体类的包名也可以)-->
+        <!--实体类的类名就是别名 看下mapper(StudentDao.xml)文件 本来
+        resultType="com.bjp.domain.Student" 就能直接写成
+        resultType="Student"-->
         <package name="com.bjp.domain"/>
     </typeAliases>
 
