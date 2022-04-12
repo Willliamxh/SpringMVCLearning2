@@ -11,7 +11,7 @@
     <input type="submit" value="提交参数">
     </form>
     <br/>
-    <img src="images/p1.jpg" >
+    <img src="images/p3.jpg" >
 
 </body>
 </html>
