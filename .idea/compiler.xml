@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ch08-forward-redirect" />
+        <module name="ch10-interceptor" />
         <module name="ch01-helloSpringMVC" />
         <module name="ch06-path" />
         <module name="ch09-exception-handler" />
