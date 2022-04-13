@@ -252,7 +252,7 @@ springmvc框架采用的是统一，全局的异常处理。
 111111-拦截器的MyInterceptor的afterCompletion()
 
 ---------------------------------------------------
-第一个拦截器preHandle=true , 第二个拦截器preHandle=false
+第一个拦截器preHandle=true , 第二个拦截器preHandle=false 2 请求到此截止
 
 111111-拦截器的MyInterceptor的preHandle()
 22222-拦截器的MyInterceptor的preHandle()
