@@ -9,6 +9,7 @@
         <module name="ch08-forward-redirect" />
         <module name="ch01-helloSpringMVC" />
         <module name="ch06-path" />
+        <module name="ch09-exception-handler" />
         <module name="ch03-receiveParam" />
         <module name="ch04-return" />
         <module name="ch02-requestMapping" />
