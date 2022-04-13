@@ -18,8 +18,22 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <!--处理异常处理需要的两步 组件扫描器 注解驱动-->
-    <context:component-scan base-package="com.bjp.handler" />
-    <mvc:annotation-driven />
+    <!--声明拦截器： 拦截器可以有0或多个-->
+    <mvc:interceptors>
+        <!--声明第一个拦截器-->
+        <mvc:interceptor>
+            <!--指定拦截的请求uri地址
+                path：就是uri地址，可以使用通配符 **
+                      ** ： 表示任意的字符，文件或者多级目录和目录中的文件
+                      /user/**/
+                http://localhost:8080/myweb/user/listUser.do
+                http://localhost:8080/myweb/student/addStudent.do
+            -->
+            <mvc:mapping path="/**"/>
+            <!--声明拦截器对象-->
+            <bean class="com.bjp.handler.MyInterceptor" />
+        </mvc:interceptor>
+    </mvc:interceptors>
+
 
 </beans>

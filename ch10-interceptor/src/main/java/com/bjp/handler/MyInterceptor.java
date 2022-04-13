@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Date;
 
-//拦截器类：拦截用户的请求。
+//拦截器类：拦截用户的请求。  类似AOP环绕通知
 public class MyInterceptor implements HandlerInterceptor {
 
     private long btime = 0;
@@ -17,7 +17,7 @@ public class MyInterceptor implements HandlerInterceptor {
      *        preHandle返回false，请求到此方法就截止。
      *
      * 参数：
-     *  Object handler ： 被拦截的控制器对象
+     *  Object handler ： 被拦截的控制器对象 也就是myController对象
      * 返回值boolean
      *   true：请求是通过了拦截器的验证，可以执行处理器方法。
          *   拦截器的MyInterceptor的preHandle()
