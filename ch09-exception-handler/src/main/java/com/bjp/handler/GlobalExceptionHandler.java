@@ -67,7 +67,7 @@ public class GlobalExceptionHandler {
     public ModelAndView doOtherException(Exception exception){
         //处理其它异常
         ModelAndView mv = new ModelAndView();
-        mv.addObject("msg","你的年龄不能大于80");
+        mv.addObject("msg","其它资源问题");
         mv.addObject("ex",exception);
         mv.setViewName("defaultError");
         return mv;
