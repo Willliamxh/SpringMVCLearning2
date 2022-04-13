@@ -84,7 +84,7 @@ public class MyInterceptor implements HandlerInterceptor {
         Exception ex：程序中发生的异常
       特点:
        1.在请求处理完成后执行的。框架中规定是当你的视图处理完成后，对视图执行了forward。就认为请求处理完成。
-       2.一般做资源回收工作的， 程序请求过程中创建了一些对象，在这里可以删除，把占用的内存回收。
+       2.一般做资源回收工作的，  程序请求过程中创建了一些对象，在这里可以删除，把占用的内存回收。
      */
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response,
